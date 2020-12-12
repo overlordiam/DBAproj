@@ -6,9 +6,7 @@ import { ReactComponent as Vector } from "./assets/Vector.svg";
 import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
 
-
-
-
+import {useStateValue} from './StateProvider';
 
 
 function Header() {
@@ -29,9 +27,8 @@ function Header() {
     if(user) {
       auth.signOut();
       dispatch({
-        type: "EMPTY_BASKET",
-        basket: null, 
-     
+        type: "SET_USER",
+        user: null,
       });
       history.push("/");
     }
@@ -71,7 +68,7 @@ function Header() {
         <div className="header__option ">
             <Link to = "/checkout">
               <div className="vector">  
-                <Vector className="vector1"/>
+                <Vector />
                 <span className="vector2">{basket?.length}</span>
               </div>        
             </Link>
@@ -83,7 +80,5 @@ function Header() {
   );
 }
 
+
 export default Header;
-
-
-

@@ -47,7 +47,7 @@ return(
   <div>
     <Header />
         <Switch>
-
+<Header />
 
           <Route path="/contact-us">
             <ContactUs />
@@ -64,11 +64,12 @@ return(
           <Route exact path="/">
             <HomePage />
           </Route>
+          <Footer />
+
         </Switch>
-    <Footer />
-      </div>
-    </Router>
-  );
-  }
+        </div>
+        </Router>
+)
+}
 
 export default App;

@@ -25,7 +25,6 @@ function Checkout() {
             />
           ))}
 </div>
-          
         </div>
       </div>
        <div className="bigTotal"> 
