@@ -9,10 +9,6 @@ import {auth} from "./firebase";
 import {useStateValue} from './StateProvider';
 
 
-
-
-
-
 function Header() {
   const [{ user,basket },dispatch] =  useStateValue();  
   const history = useHistory();
@@ -27,9 +23,6 @@ function Header() {
   };
 
 
-
-  
-  
   const handleUser = () => {
     if(user) {
       auth.signOut();

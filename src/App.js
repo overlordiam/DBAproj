@@ -44,7 +44,7 @@ function App() {
 
 return(
 <Router>
-  <div>
+  <div className="app">
         <Switch>
 <Header />
 
@@ -69,6 +69,6 @@ return(
         </div>
         </Router>
 )
-  }
+}
 
 export default App;

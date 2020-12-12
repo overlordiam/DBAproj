@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import Card from "./Card";
 import SearchIcon from '@material-ui/icons/Search';
 import "./Shop.css";
-import Cards from "./Card";   
 import items from "./SHOP_DATA";
 import { useStateValue } from './StateProvider';
 function Shop() {
