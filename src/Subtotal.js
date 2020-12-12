@@ -7,7 +7,6 @@ import { getBasketTotal } from "./reducer";
 import { useHistory } from "react-router-dom";
 
 function Subtotal() {
-  const history = useHistory();
   const [{ basket }, dispatch] = useStateValue();
 
   return (
@@ -17,7 +16,7 @@ function Subtotal() {
           <>
             <p>
               {/* Part of the homework */}
-              Subtotal ({basket.length} items): <strong>{value}</strong>
+              Total ({basket.length} items): <strong>{value}</strong>
             </p>
             
           </>
